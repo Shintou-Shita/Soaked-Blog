@@ -1,0 +1,23 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<p>
+				<span style="display:block; text-align:left;">精神病院不治病人，求生之道，惟有自救。</span><br>
+				<span style="display:block; text-align:right;">——柯武国</span>
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
